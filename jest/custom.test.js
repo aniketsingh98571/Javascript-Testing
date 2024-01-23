@@ -1,4 +1,4 @@
-import {add,myFunction,fetch,fetchPromise} from './custom.js'
+import {add,myFunction,fetch,fetchPromise,multiple} from './custom.js'
 /*
 
 Matchers:-
@@ -61,4 +61,10 @@ test("fetch promise",()=>{
 test("fetch using async",async()=>{
    const data=await fetchPromise()
    expect(data).toBe("peanut butter")
+})
+
+//TDD
+test("checking fizz printing",()=>{
+    const result=multiple(42)
+    expect(result).toBe("fizz")
 })

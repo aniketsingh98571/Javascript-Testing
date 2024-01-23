@@ -26,3 +26,8 @@ test('mock implementation of a basic function',()=>{
 })
 
 //spyOn function in jest
+
+//TDD
+export const multiple=(num)=>{
+    if(num%3===0) return "fizz" 
+}
